@@ -1,0 +1,2 @@
+rootProject.name='Moto Brothers'
+include ':app'
