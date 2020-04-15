@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, EsqueciSenha.class);
                     startActivity(intent);
 
-                    Toast.makeText(MainActivity.this, "you clicked on text", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
                 }
     });
         TextView = (TextView) findViewById(R.id.txtCadastro);
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, Cadastro.class);
                 startActivity(intent);
 
-                Toast.makeText(MainActivity.this, "you clicked on text", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
             }
         });
 }

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "371441677259",
+    "firebase_url": "https://moto-brothers.firebaseio.com",
+    "project_id": "moto-brothers",
+    "storage_bucket": "moto-brothers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371441677259:android:8381a2410332acd8683c4e",
+        "android_client_info": {
+          "package_name": "com.example.motobrothers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371441677259-1mf0b6pgs38nuhrm4nfnirg0j129m7jv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.motobrothers",
+            "certificate_hash": "1f2e709a3978b438bb16b850b431f82bd27fc9c5"
+          }
+        },
+        {
+          "client_id": "371441677259-ei1t7jatvi7mm83u80v2ucruq0fe9o24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNwTr04YvizEVwqJlxgLl9RJRp_UkUhig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371441677259-ei1t7jatvi7mm83u80v2ucruq0fe9o24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
