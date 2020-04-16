@@ -28,7 +28,7 @@
         tools:ignore="LabelFor" />
 
     <EditText
-        android:id="@+id/editPassword"
+        android:id="@+id/editSenha"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -47,7 +47,7 @@
         tools:ignore="LabelFor" />
 
     <Button
-        android:id="@+id/buttLogin"
+        android:id="@+id/bntLogin"
         android:layout_width="330dp"
         android:layout_height="43dp"
         android:layout_gravity="center_horizontal"
