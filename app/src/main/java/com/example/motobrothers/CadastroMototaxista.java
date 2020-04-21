@@ -23,7 +23,6 @@ public class CadastroMototaxista extends AppCompatActivity {
                 Intent intent = new Intent(CadastroMototaxista.this, TermosUso.class);
                 startActivity(intent);
 
-                Toast.makeText(CadastroMototaxista.this, "you clicked on text", Toast.LENGTH_SHORT).show();
             }
         });
     }

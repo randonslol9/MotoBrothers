@@ -41,7 +41,6 @@ public class Cadastro extends AppCompatActivity {
                 Intent intent = new Intent(Cadastro.this, MainActivity.class);
                 startActivity(intent);
 
-                Toast.makeText(Cadastro.this, "you clicked on text", Toast.LENGTH_SHORT).show();
             }
         });
     }

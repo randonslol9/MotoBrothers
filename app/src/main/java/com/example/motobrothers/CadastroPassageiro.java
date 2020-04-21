@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.Checkable;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,6 +26,7 @@ public class CadastroPassageiro extends AppCompatActivity {
     TextView TextView;
     EditText mNome, mUsuario, mEmail, mNumero, mData, mCPF, mSenha, mConfirmarSenha;
     Button mConfirmar;
+    CheckBox mCheck;
     FirebaseAuth fAuth;
 
 
@@ -40,6 +43,7 @@ public class CadastroPassageiro extends AppCompatActivity {
         mCPF = findViewById(R.id.editCPF);
         mSenha = findViewById(R.id.editSenha);
         mConfirmarSenha = findViewById(R.id.editConfirmarSenha);
+        mCheck = findViewById(R.id.checkTermos);
 
         mConfirmar = findViewById(R.id.bntConfirmar);
 
@@ -60,6 +64,7 @@ public class CadastroPassageiro extends AppCompatActivity {
                 String senha = mSenha.getText().toString().trim();
                 String confirmarsenha = mConfirmarSenha.getText().toString().trim();
 
+
                 if(TextUtils.isEmpty(email)){
                     mEmail.setError("Este campo não pode ficar em branco");
                     return;
@@ -68,7 +73,7 @@ public class CadastroPassageiro extends AppCompatActivity {
                     mSenha.setError("Este campo não pode ficar em branco");
                     return;
                 }
-                if(senha.length() < 11){
+                if(senha.length() < 6){
                     mSenha.setError("A senha deve conter pelo menos 11 digitos.");
                     return;
                 }
@@ -112,7 +117,6 @@ public class CadastroPassageiro extends AppCompatActivity {
                 Intent intent = new Intent(CadastroPassageiro.this, TermosUso.class);
                 startActivity(intent);
 
-                Toast.makeText(CadastroPassageiro.this, "", Toast.LENGTH_SHORT).show();
             }
         });
     }

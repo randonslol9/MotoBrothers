@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         mLogin = findViewById(R.id.bntLogin);
 
+
         fAuth = FirebaseAuth.getInstance();
 
 
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                     mSenha.setError("Este campo não pode ficar em branco!");
                     return;
                 }
-                if(senha.length() < 11){
+                if(senha.length() < 6){
                     mSenha.setError("A senha deve conter 11 ou mais digitos!");
                     return;
                 }
@@ -65,12 +66,13 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "Login efetuado com sucesso", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),Login.class));
                         }else{
-                            Toast.makeText(MainActivity.this, "Não foi possivel fazer login, tente novamente!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Login/Senha não conferem!\n"+"ou está conta não existe!", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
             }
         });
+
 
             TextView = (TextView) findViewById(R.id.txtEsquecisenha);
             TextView.setOnClickListener(new View.OnClickListener(){
@@ -78,8 +80,6 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     Intent intent = new Intent(MainActivity.this, EsqueciSenha.class);
                     startActivity(intent);
-
-                    Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
                 }
     });
         TextView = (TextView) findViewById(R.id.txtCadastro);
@@ -88,8 +88,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Cadastro.class);
                 startActivity(intent);
-
-                Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
             }
         });
 }
