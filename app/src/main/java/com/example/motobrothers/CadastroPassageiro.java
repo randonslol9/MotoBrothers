@@ -65,48 +65,57 @@ public class CadastroPassageiro extends AppCompatActivity {
                 String confirmarsenha = mConfirmarSenha.getText().toString().trim();
 
 
-                if(TextUtils.isEmpty(email)){
+                if (TextUtils.isEmpty(email)) {
                     mEmail.setError("Este campo não pode ficar em branco");
                     return;
                 }
-                if(TextUtils.isEmpty(senha)){
+                if (TextUtils.isEmpty(senha)) {
                     mSenha.setError("Este campo não pode ficar em branco");
                     return;
                 }
-                if(senha.length() < 6){
+                if (senha.length() < 6) {
                     mSenha.setError("A senha deve conter pelo menos 11 digitos.");
                     return;
                 }
-                if(TextUtils.isEmpty(usuario)){
+                if (!senha.equals(confirmarsenha)){
+                    Toast.makeText(CadastroPassageiro.this, "As senhas devem ser iguais!", Toast.LENGTH_SHORT).show();
+                    mSenha.getText().clear();
+                    mConfirmarSenha.getText().clear();
+                    return;
+                }
+                if (TextUtils.isEmpty(usuario)) {
                     mUsuario.setError("Este campo não pode ficar em branco");
                     return;
                 }
-                if(TextUtils.isEmpty(numero)){
+                if (TextUtils.isEmpty(numero)) {
                     mNumero.setError("Este campo não pode ficar em branco");
                     return;
                 }
-                if(TextUtils.isEmpty(data)){
+                if (TextUtils.isEmpty(data)) {
                     mData.setError("Este campo não pode ficar em branco");
                     return;
                 }
-                if(TextUtils.isEmpty(cpf)){
+                if (TextUtils.isEmpty(cpf)) {
                     mCPF.setError("Este campo não pode ficar em branco");
                     return;
                 }
+                if(!mCheck.isChecked()){
+                    Toast.makeText(CadastroPassageiro.this, "Você precisa aceitar os termos e condição de uso do aplicativo", Toast.LENGTH_SHORT).show();
+                    mCheck.setError("Você precisa aceitar os termos e condição de uso do aplicativo");
+                    return;
+                }
 
-                fAuth.createUserWithEmailAndPassword(email,senha).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                fAuth.createUserWithEmailAndPassword(email, senha).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()){
+                        if (task.isSuccessful()) {
                             Toast.makeText(CadastroPassageiro.this, "Registrado com sucesso!", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),Login.class));
-                        }else{
+                            startActivity(new Intent(getApplicationContext(), Login.class));
+                        } else {
                             Toast.makeText(CadastroPassageiro.this, "Não foi possivel se registrar, tente novamente!", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
-
-
             }
         });
 
@@ -120,5 +129,4 @@ public class CadastroPassageiro extends AppCompatActivity {
             }
         });
     }
-
 }
