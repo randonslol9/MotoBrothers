@@ -9,7 +9,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.Checkable;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,12 +18,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-import org.w3c.dom.Text;
 
 
 public class CadastroPassageiro extends AppCompatActivity {
     TextView TextView;
-    EditText mNome, mUsuario, mEmail, mNumero, mData, mCPF, mSenha, mConfirmarSenha;
+    EditText mNome, mEmail, mNumero, mData, mCPF, mSenha, mConfirmarSenha;
     Button mConfirmar;
     CheckBox mCheck;
     FirebaseAuth fAuth;
@@ -36,7 +34,6 @@ public class CadastroPassageiro extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro_passageiro);
 
         mNome = findViewById(R.id.editNome);
-        mUsuario = findViewById(R.id.editUsuario);
         mEmail = findViewById(R.id.editEmail);
         mNumero = findViewById(R.id.editCelular);
         mData = findViewById(R.id.editdtNascimento);
@@ -57,7 +54,6 @@ public class CadastroPassageiro extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String email = mEmail.getText().toString().trim();
-                String usuario = mUsuario.getText().toString().trim();
                 String numero = mNumero.getText().toString().trim();
                 String data = mData.getText().toString().trim();
                 String cpf = mCPF.getText().toString().trim();
@@ -83,10 +79,6 @@ public class CadastroPassageiro extends AppCompatActivity {
                     mConfirmarSenha.getText().clear();
                     return;
                 }
-                if (TextUtils.isEmpty(usuario)) {
-                    mUsuario.setError("Este campo não pode ficar em branco");
-                    return;
-                }
                 if (TextUtils.isEmpty(numero)) {
                     mNumero.setError("Este campo não pode ficar em branco");
                     return;
@@ -100,8 +92,8 @@ public class CadastroPassageiro extends AppCompatActivity {
                     return;
                 }
                 if(!mCheck.isChecked()){
-                    Toast.makeText(CadastroPassageiro.this, "Você precisa aceitar os termos e condição de uso do aplicativo", Toast.LENGTH_SHORT).show();
-                    mCheck.setError("Você precisa aceitar os termos e condição de uso do aplicativo");
+                    Toast.makeText(CadastroPassageiro.this, "Você precisa aceitar os termos e condições de uso do aplicativo", Toast.LENGTH_SHORT).show();
+                    mCheck.setError("Você precisa aceitar os termos e condições de uso do aplicativo");
                     return;
                 }
 

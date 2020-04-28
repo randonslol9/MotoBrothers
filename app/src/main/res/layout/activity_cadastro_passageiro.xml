@@ -13,95 +13,62 @@
         android:layout_height="wrap_content"
         android:text="@string/nome"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintHorizontal_bias="0.070"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.110" />
+        app:layout_constraintVertical_bias="0.100" />
 
     <EditText
         android:id="@+id/editNome"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:autofillHints=""
         android:inputType="textPersonName"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:theme="@style/MyEditTextTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.200"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.140"
-        tools:ignore="LabelFor" />
-
-    <TextView
-        android:id="@+id/txtUsuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/usuario"
-        android:textColor="@color/cinza"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195" />
-
-    <EditText
-        android:id="@+id/editUsuario"
-        android:layout_width="310dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:autofillHints=""
-        android:inputType="textPersonName"
-        android:textColor="@color/cinza"
-        android:textSize="18dp"
-        android:theme="@style/MyEditTextTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.200"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.240"
-        tools:ignore="LabelFor" />
-
+        app:layout_constraintVertical_bias="0.130"
+        tools:ignore="LabelFor"
+        android:autofillHints=""/>
     <TextView
         android:id="@+id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/email"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.050"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.290" />
+        app:layout_constraintVertical_bias="0.185" />
 
     <EditText
         android:id="@+id/editEmail"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:autofillHints=""
         android:inputType="textEmailAddress"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:theme="@style/MyEditTextTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.200"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.340"
-        tools:ignore="LabelFor" />
+        app:layout_constraintVertical_bias="0.215"
+        tools:ignore="LabelFor"
+        android:autofillHints=""/>
 
     <TextView
         android:id="@+id/txtCelular"
@@ -109,31 +76,31 @@
         android:layout_height="wrap_content"
         android:text="@string/celular"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.390" />
+        app:layout_constraintVertical_bias="0.270" />
 
     <EditText
         android:id="@+id/editCelular"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:autofillHints=""
         android:inputType="phone"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:theme="@style/MyEditTextTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.200"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.440"
-        tools:ignore="LabelFor" />
+        app:layout_constraintVertical_bias="0.300"
+        tools:ignore="LabelFor"
+        android:autofillHints=""/>
 
     <TextView
         android:id="@+id/txtdataNascimento"
@@ -141,66 +108,66 @@
         android:layout_height="wrap_content"
         android:text="@string/dataNascimento"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.480" />
+        app:layout_constraintVertical_bias="0.355" />
 
     <EditText
         android:id="@+id/editdtNascimento"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:autofillHints=""
         android:ems="10"
-        android:hint="dd/mm/aaaa"
+        android:hint="@string/dataNasc"
+        android:autofillHints="dd/mm/aaaa"
         android:inputType="text|number"
         android:textColor="@color/cinza"
-        android:textColorHint="@color/cinza"
-        android:textSize="18dp"
+        android:textColorHint="@color/verdecadastro"
+        android:textSize="18sp"
         android:theme="@style/MyEditTextTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.200"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.540"
+        app:layout_constraintVertical_bias="0.385"
         tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/txtCPF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CPF"
+        android:text="@string/CPF"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.050"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.580" />
+        app:layout_constraintVertical_bias="0.440" />
 
     <EditText
         android:id="@+id/editCPF"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:autofillHints=""
         android:inputType="text|number"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:theme="@style/MyEditTextTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.200"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.640"
-        tools:ignore="LabelFor" />
+        app:layout_constraintVertical_bias="0.470"
+        tools:ignore="LabelFor"
+        android:autofillHints=""/>
 
     <TextView
         android:id="@+id/txtSenha"
@@ -208,93 +175,93 @@
         android:layout_height="wrap_content"
         android:text="@string/senha"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.050"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.680" />
+        app:layout_constraintVertical_bias="0.525" />
 
     <EditText
         android:id="@+id/editSenha"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:autofillHints=""
         android:inputType="textPassword"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:theme="@style/MyEditTextTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.200"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.740"
-        tools:ignore="LabelFor" />
+        app:layout_constraintVertical_bias="0.555"
+        tools:ignore="LabelFor"
+        android:autofillHints=""/>
 
     <TextView
         android:id="@+id/txtConfirmarSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirmar Senha"
+        android:text="@string/confirmarsenha"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.780" />
+        app:layout_constraintVertical_bias="0.605" />
 
     <EditText
         android:id="@+id/editConfirmarSenha"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:autofillHints=""
         android:inputType="textPassword"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:theme="@style/MyEditTextTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.200"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.840"
-        tools:ignore="LabelFor" />
+        app:layout_constraintVertical_bias="0.635"
+        tools:ignore="LabelFor"
+        android:autofillHints="" />
 
     <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/checkTermos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Concordo com os"
+        android:text="@string/concordotermos"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:theme="@style/CheckBox"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.908" />
+        app:layout_constraintVertical_bias="0.685" />
 
 
     <TextView
         android:id="@+id/txtTermos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TERMOS DE USO"
+        android:text="@string/termos"
         android:textColor="@color/verdecadastro"
-        android:textSize="15dp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.902" />
+        app:layout_constraintVertical_bias="0.685" />
 
 
     <Button
@@ -303,10 +270,10 @@
         android:layout_height="wrap_content"
         android:background="@drawable/botaoconfirmar_launcher"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.95" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
