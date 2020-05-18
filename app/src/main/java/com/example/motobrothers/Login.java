@@ -13,6 +13,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Login extends AppCompatActivity {
 
+    String userID;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,3 +28,4 @@ public class Login extends AppCompatActivity {
         finish();
     }
 }
+

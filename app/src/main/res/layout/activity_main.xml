@@ -4,46 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundlogin_launcher"
+    android:background="@drawable/backloginnew_launcher"
     tools:context=".MainActivity">
 
 
     <EditText
-        android:id="@+id/editLogin"
-        android:layout_width="330dp"
+        android:id="@+id/editEmail"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:inputType="textEmailAddress"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:theme="@style/MyEditTextTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.262"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723"
+        app:layout_constraintVertical_bias="0.613"
         tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/editSenha"
-        android:layout_width="330dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:autofillHints=""
         android:ems="10"
+        android:maxLength="30"
         android:inputType="textPassword"
         android:textColor="@color/cinza"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:theme="@style/MyEditTextTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.262"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.815"
+        app:layout_constraintVertical_bias="0.715"
         tools:ignore="LabelFor" />
 
     <Button
@@ -58,7 +60,23 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
+        app:layout_constraintVertical_bias="0.840" />
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946" />
 
     <TextView
         android:id="@+id/txtEsquecisenha"
@@ -66,15 +84,14 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
-        android:clickable="true"
         android:text="@string/esquecisenha"
         android:textColor="@color/cinza"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintHorizontal_bias="0.795"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875" />
+        app:layout_constraintVertical_bias="0.780" />
 
     <TextView
         android:id="@+id/txtCadastro"
@@ -82,14 +99,14 @@
         android:layout_height="wrap_content"
         android:text="@string/cadastrar"
         android:textColor="@color/verdecadastro"
+        android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintHorizontal_bias="0.650"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.985" />
-
+        app:layout_constraintVertical_bias="0.960" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

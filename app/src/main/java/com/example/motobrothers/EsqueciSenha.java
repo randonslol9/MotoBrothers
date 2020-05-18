@@ -32,7 +32,7 @@ public class EsqueciSenha extends AppCompatActivity {
 
 
         ResetPasswordSendEmailButton = (Button)findViewById(R.id.bntEnviar);
-        ResetEmailInput = (EditText)findViewById(R.id.editDigiteEmail);
+        ResetEmailInput = (EditText)findViewById(R.id.editEmail);
 
         ResetPasswordSendEmailButton.setOnClickListener(new View.OnClickListener() {
             @Override
