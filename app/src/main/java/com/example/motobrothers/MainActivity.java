@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
             public void onSuccess(LoginResult loginResult) {
                 Log.d(TAG, "onSuccess: " + loginResult );
                 handleFacebookToken(loginResult.getAccessToken());
+                startActivity(new Intent(getApplicationContext(),MenuPassageiro.class));
             }
 
             @Override
@@ -131,12 +132,12 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
+
                 fAuth.signInWithEmailAndPassword(email,senha).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            Toast.makeText(MainActivity.this, "Login efetuado com sucesso", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),Login.class));
+                            startActivity(new Intent(getApplicationContext(),MenuPassageiro.class));
                         }else{
                             Toast.makeText(MainActivity.this, "Login/Senha não conferem!\n"+"ou está conta não existe!", Toast.LENGTH_SHORT).show();
                         }

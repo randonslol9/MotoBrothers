@@ -137,7 +137,7 @@ public class CadastroPassageiro extends AppCompatActivity {
                                 }
                             });
                             Toast.makeText(CadastroPassageiro.this, "Registrado com sucesso!", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), Login.class));
+                            startActivity(new Intent(getApplicationContext(), MenuPassageiro.class));
                         } else {
                             Toast.makeText(CadastroPassageiro.this, "Não foi possivel se registrar, tente novamente!", Toast.LENGTH_SHORT).show();
                         }

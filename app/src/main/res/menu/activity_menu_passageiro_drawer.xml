@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_action_inicio"
+            android:title="@string/menu_inicio" />
+        <item
+            android:id="@+id/nav_corridas"
+            android:icon="@drawable/ic_action_lista"
+            android:title="@string/menu_corridas" />
+        <item
+            android:id="@+id/nav_pagamento"
+            android:icon="@drawable/ic_action_pagamento"
+            android:title="@string/menu_pagamento" />
+        <item
+            android:id="@+id/nav_seguranca"
+            android:icon="@drawable/ic_action_seguranca"
+            android:title="@string/menu_seguranca" />
+        <item
+            android:id="@+id/nav_sejaMototaxista"
+            android:icon="@drawable/ic_action_mototaxista_2"
+            android:title="@string/menu_mototaxista" />
+        <item
+            android:id="@+id/nav_configuracoes"
+            android:icon="@drawable/ic_action_configuracoes"
+            android:title="@string/menu_configuracoes" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_action_logout"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>
